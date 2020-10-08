@@ -14,13 +14,18 @@ user_schema = {
         'type' : 'string',
         'minlength' : 1,
         'maxlength' : 30,
-        'unique'    : True
+        'unique'    : True,
+        'required'  : True
     },
     'password': {
         'type' : 'string',
         'minlength' : 1,
-        'maxlength' : 30,
+        'maxlength' : 60,
+        'required'  : True
     },
+    'token': {
+        'type': 'string'
+    }
 }
 
 #domain configuration

@@ -1,5 +1,7 @@
 import json
 import requests
+import bcrypt
+from db_testing import *
 
 def main():
     default_data()
@@ -8,11 +10,12 @@ def url_for(endpoint):
     return "http://localhost:5000/{}".format(endpoint)
 
 def default_data():
+    salt = bcrypt.gensalt()
     data = [
-        {"username": "AnasMarg", "password": "1234"},
-        {"username": "KoStas", "password": "I7exw"},
-        {"username": "Kwlomauros", "password": "nienie"},
-        {'username': 'Sourovlakas', 'password': 'eeeerefile'}
+        {"username": "AnasMarg", "password": bcrypt.hashpw("1234", salt)},
+        {"username": "KoStas", "password": bcrypt.hashpw("I7exw", salt)},
+        {"username": "Kwlomauros", "password": bcrypt.hashpw("nienie", salt)},
+        {'username': 'Sourovlakas', 'password': bcrypt.hashpw('eeeerefile', salt)}
     ]
 
     response = requests.post(
