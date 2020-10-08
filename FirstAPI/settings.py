@@ -8,35 +8,30 @@ RESOURCE_METHODS = ['GET']
 ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
 
 #domain definition
-people_schema = {
+user_schema = {
 
-    'firstname': {
+    'username': {
         'type' : 'string',
         'minlength' : 1,
         'maxlength' : 30,
         'unique'    : True
     },
-    'lastname': {
+    'password': {
         'type' : 'string',
         'minlength' : 1,
         'maxlength' : 30,
-        'unique'    : True
     },
 }
 
 #domain configuration
-people = {
-     'additional_lookup': {
-        'url': 'regex("[\w]+")',
-        'field': 'lastname'
-    },
-
+user = {
+   
     'resource_methods': ['GET', 'POST', 'DELETE'],
     'item_methods'    : ['GET', 'DELETE'],
 
-    'schema': people_schema
+    'schema': user_schema
 }
 
 DOMAIN = {
-    'people': people
+    'user': user
 }
