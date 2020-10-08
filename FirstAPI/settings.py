@@ -28,8 +28,9 @@ user = {
    
     'resource_methods': ['GET', 'POST', 'DELETE'],
     'item_methods'    : ['GET', 'DELETE'],
+    'public_methods'  : ['POST'],
 
-    'schema': user_schema
+    'schema': user_schema,
 }
 
 DOMAIN = {
