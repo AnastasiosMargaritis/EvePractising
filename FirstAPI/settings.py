@@ -7,6 +7,10 @@ MONGO_URI = "mongodb://localhost:27017/first-api"
 RESOURCE_METHODS = ['GET']
 ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
 
+#JWT Configuration
+JWT_SECRET = 'secret'
+JWT_ISSUER = 'issuer'
+
 #domain definition
 user_schema = {
 

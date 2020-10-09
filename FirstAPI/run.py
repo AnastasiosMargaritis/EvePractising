@@ -1,5 +1,6 @@
 from eve import Eve
 from eve.auth import BasicAuth, TokenAuth
+from eve_auth_jwt import JWTAuth
 import bcrypt
 from db_testing import *
 
@@ -19,5 +20,5 @@ class TokenAuth(TokenAuth):
         return accounts.find_one({'token': token})
 
 if __name__ == '__main__':
-    app = Eve(auth = TokenAuth)
+    app = Eve()
     app.run()
