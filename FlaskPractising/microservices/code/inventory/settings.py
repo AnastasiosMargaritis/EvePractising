@@ -17,6 +17,7 @@ schema = {
     'quantity': {
         'type': 'float',
         'required': True,
+        'min': 0
     },
 }
 
