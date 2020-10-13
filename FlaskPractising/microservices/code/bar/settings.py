@@ -26,6 +26,16 @@ schema = {
     }
 }
 
+bar = {
+
+    'additional_lookup': {
+        'url': 'regex("[\w]+")',
+        'field': 'drink_type'
+    },
+
+    'schema': schema
+}
+
 DOMAIN = {
-    'bar': {'schema': schema},
+    'bar': bar
 }
