@@ -19,8 +19,8 @@ def bar_order(drink_type):
             headers={"If-Match": r.json()["_etag"]}
             )
         print('Quantity updated, server status: ', r.status_code)
-
-    return r.json()
+    
+    return requests.get('http://localhost:8081/bar/{}'.format(drink_type)).json()
 
 if __name__ == '__main__':
     app.run(port=8081)

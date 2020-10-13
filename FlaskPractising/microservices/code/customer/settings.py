@@ -18,16 +18,6 @@ schema = {
         'type': 'float',
         'default': 0.0
     },
-
-    'receipt': {
-        'type': 'dict',
-        'schema': {
-            'Beer': {'type': 'float', 'default': 0.0},
-            'Wine': {'type': 'float', 'default': 0.0},
-            'Whiskey': {'type': 'float', 'default': 0.0},
-            'Vodka': {'type': 'float', 'default': 0.0},
-        }
-    }
 }
 
 DOMAIN = {
