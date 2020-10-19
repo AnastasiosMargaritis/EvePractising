@@ -5,44 +5,37 @@ services:
     nginx:
         build: ./nginx
         container_name: nginx
-        networks: 
-            - internet
         restart: always
         ports:
-        - "80:80"
+            - 80:80
 
     database:
         image: mongo:latest    
+        container_name: database
         ports: 
-            - "27017:27017"
-        networks: 
-            - no-internet
+            - 27017:27017
     
     inventory:
         build: ./inventory
         container_name: inventory
         restart: always
-        networks: 
-            - no-internet
         environment:
             - APP_NAME=InventoryMssc
             - MONGO_URI=mongodb://database:27017/inventory
-        ports:
-            - "8080:8080"
         depends_on: [database, nginx]
+        expose:  
+            - 8080
 
     bar:
         build: ./bar
         container_name: bar
-        networks: 
-            - no-internet
         restart: always
         environment:
             - APP_NAME=BarMssc
             - MONGO_URI=mongodb://database:27017/bar
-        ports:
-          - "8081:8081"
         depends_on: [inventory, database, nginx]
+        expose: 
+            - 8081
            
 
 
@@ -50,18 +43,10 @@ services:
         build: ./customer
         container_name: customer
         restart: always
-        networks: 
-            - no-internet
         environment:
             - APP_NAME=CustomerMssc
             -  MONGO_URI=mongodb://database:27017/customer
-        ports:
-            - "8082:8082"
         depends_on: [inventory, bar, database, nginx]
+        expose: 
+            - 8082
 
-networks: 
-    internet:
-        driver: host
-    no-internet:
-        driver: host
-        internal: true

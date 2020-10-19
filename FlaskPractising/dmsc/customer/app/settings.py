@@ -1,6 +1,6 @@
 X_DOMAINS ="*"
 
-MONGO_URI = "mongodb://localhost:27017/customer"
+MONGO_URI = "mongodb://database:27017/customer"
 
 RESOURCE_METHODS = ['GET', 'POST', 'DELETE']
 ITEM_METHODS = ['GET', 'PATCH', 'PUT', 'DELETE']
