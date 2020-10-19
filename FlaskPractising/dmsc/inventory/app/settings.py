@@ -1,4 +1,4 @@
-X_DOMAINS ="*"
+X_DOMAINS="*"
 
 MONGO_URI = "mongodb://localhost:27017/inventory"
 
