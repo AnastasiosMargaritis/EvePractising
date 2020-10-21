@@ -6,4 +6,4 @@ ADD . /app
 
 RUN pip3 install -r requirements.txt
 
-CMD ["gunicorn"  , "-w", "4", "-b", "0.0.0.0:8080", "app.run:create_app()"]
+CMD ["gunicorn"  , "-w", "4", "-b", "0.0.0.0:8080", "--access-logfile", "app.log", "app.run:create_app()"]
