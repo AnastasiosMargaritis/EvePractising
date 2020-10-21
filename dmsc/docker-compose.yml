@@ -25,6 +25,8 @@ services:
         depends_on: [database, nginx]
         expose:  
             - 8080
+        volumes:
+            - ./:app:app.log
 
     bar:
         build: ./bar
