@@ -1,0 +1,30 @@
+2020-10-20 13:40:20,115 ERROR: Exception on / [GET] [in app.py:1892] -- ip: 127.0.0.1, url: http://127.0.0.1:8000/, method:GET
+Traceback (most recent call last):
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/flask/app.py", line 2447, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/flask/app.py", line 1821, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/flask/app.py", line 1950, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/flask/app.py", line 1936, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/eve/methods/common.py", line 325, in rate_limited
+    return f(*args, **kwargs)
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/eve/auth.py", line 80, in decorated
+    return f(*args, **kwargs)
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/eve/endpoints.py", line 156, in home_endpoint
+    return send_response(None, (response,))
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/eve/render.py", line 58, in decorated
+    getattr(app, event_name)(resource, request, r)
+  File "/home/anastasismargaritis/.local/lib/python3.6/site-packages/events/events.py", line 95, in __call__
+    f(*a, **kw)
+  File "/home/anastasismargaritis/Desktop/EvePractising/FlaskPractising/dmsc/inventory/app/run.py", line 6, in log_every_get
+    app.logger.info('We just answered to a GET request!')
+NameError: name 'app' is not defined
+2020-10-20 13:40:42,334 INFO: We just answered to a GET request! [in run.py:9] -- ip: 127.0.0.1, url: http://127.0.0.1:8000/, method:GET
+2020-10-20 13:40:46,761 INFO: We just answered to a GET request! [in run.py:9] -- ip: 127.0.0.1, url: http://127.0.0.1:8000/, method:GET
+2020-10-20 13:42:12,650 INFO: We just answered to a GET request! [in run.py:9] -- ip: 127.0.0.1, url: http://127.0.0.1:8000/, method:GET
