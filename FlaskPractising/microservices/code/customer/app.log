@@ -1,0 +1,34 @@
+2020-10-21 12:59:49,712 INFO: {} [in run.py:16] -- ip: 127.0.0.1, url: http://localhost:8082/customer, method:DELETE
+2020-10-21 12:59:49,720 INFO: <Response 2 bytes [204 NO CONTENT]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer, method:DELETE
+2020-10-21 12:59:49,722 INFO: customer [in run.py:13] -- ip: 127.0.0.1, url: http://localhost:8082/customer, method:POST
+2020-10-21 12:59:49,728 INFO: <Response 884 bytes [201 CREATED]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer, method:POST
+2020-10-21 12:59:49,732 INFO: <Request 'http://localhost:8082/customer' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer, method:GET
+2020-10-21 12:59:49,732 INFO: <Response 1093 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer, method:GET
+2020-10-21 13:00:13,755 INFO: <Request 'http://127.0.0.1:8082/customer' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer, method:GET
+2020-10-21 13:00:13,755 INFO: <Response 1093 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer, method:GET
+2020-10-21 13:00:21,620 INFO: <Request 'http://127.0.0.1:8082/customer/order/Beer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer/order/Beer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:00:21,620 INFO: <Response 106 bytes [405 METHOD NOT ALLOWED]> [in run.py:20] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer/order/Beer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:15,278 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:15,278 INFO: <Response 407 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:15,283 INFO: <Response 283 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:PATCH
+2020-10-21 13:01:15,286 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:15,286 INFO: <Response 407 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:15,287 INFO: <Response 381 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer/order/Beer/5f9006952c46d17e718a64cc, method:POST
+2020-10-21 13:01:16,623 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:16,623 INFO: <Response 407 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:16,629 INFO: <Response 283 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:PATCH
+2020-10-21 13:01:16,636 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:16,636 INFO: <Response 407 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:16,637 INFO: <Response 381 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer/order/Beer/5f9006952c46d17e718a64cc, method:POST
+2020-10-21 13:01:49,303 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,304 INFO: <Response 407 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,308 INFO: <Response 283 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:PATCH
+2020-10-21 13:01:49,311 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,311 INFO: <Response 407 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,312 INFO: <Response 381 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer/order/Beer/5f9006952c46d17e718a64cc, method:POST
+2020-10-21 13:01:49,850 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,850 INFO: <Response 407 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,855 INFO: <Response 283 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:PATCH
+2020-10-21 13:01:49,858 INFO: <Request 'http://localhost:8082/customer/5f9006952c46d17e718a64cc' [GET]> [in run.py:10] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,858 INFO: <Response 420 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://localhost:8082/customer/5f9006952c46d17e718a64cc, method:GET
+2020-10-21 13:01:49,859 INFO: <Response 394 bytes [200 OK]> [in run.py:20] -- ip: 127.0.0.1, url: http://127.0.0.1:8082/customer/order/Beer/5f9006952c46d17e718a64cc, method:POST

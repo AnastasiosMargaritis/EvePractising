@@ -1,0 +1,28 @@
+2020-10-21 12:59:15,814 INFO: bar [in run.py:11] -- ip: 127.0.0.1, url: http://localhost:8081/bar, method:POST
+2020-10-21 12:59:15,825 INFO: <Response 432 bytes [422 UNPROCESSABLE ENTITY]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar, method:POST
+2020-10-21 12:59:15,828 INFO: <Request 'http://localhost:8081/bar' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar, method:GET
+2020-10-21 12:59:15,828 INFO: <Response 1414 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar, method:GET
+2020-10-21 13:01:15,260 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:15,260 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:15,268 INFO: <Response 273 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/5f8d3f7a6773334d026bb3fd, method:PATCH
+2020-10-21 13:01:15,272 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:15,272 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:15,273 INFO: <Response 372 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/order/Beer, method:GET
+2020-10-21 13:01:16,607 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:16,607 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:16,612 INFO: <Response 273 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/5f8d3f7a6773334d026bb3fd, method:PATCH
+2020-10-21 13:01:16,616 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:16,616 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:16,618 INFO: <Response 372 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/order/Beer, method:GET
+2020-10-21 13:01:49,289 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,289 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,295 INFO: <Response 273 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/5f8d3f7a6773334d026bb3fd, method:PATCH
+2020-10-21 13:01:49,298 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,298 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,299 INFO: <Response 372 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/order/Beer, method:GET
+2020-10-21 13:01:49,834 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,835 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,840 INFO: <Response 273 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/5f8d3f7a6773334d026bb3fd, method:PATCH
+2020-10-21 13:01:49,843 INFO: <Request 'http://localhost:8081/bar/Beer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,843 INFO: <Response 400 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/Beer, method:GET
+2020-10-21 13:01:49,845 INFO: <Response 372 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8081/bar/order/Beer, method:GET

@@ -2,11 +2,17 @@ import json
 import requests
 
 def main():
+    delete_inventory()
     post_inventory()
     get_inventory()
 
 def url_for(endpoint):
     return "http://localhost:8080/{}".format(endpoint)
+
+def delete_inventory():
+    r = requests.delete(url_for('inventory'))
+    print('Customers deleted, server response: ', r.status_code)
+    
 
 def post_inventory():
 

@@ -1,10 +1,8 @@
 from eve import Eve
-import json
 import requests
 import logging
 
 app = Eve()
-
 
 def log_every_get_request(resource, request, payload):
     app.logger.info(request)
@@ -24,31 +22,27 @@ app.on_post_GET += log_every_get_request
 app.on_pre_POST += log_every_post
 app.on_pre_DELETE += log_every_delete
 
-
-@app.route('/customer/order/<drink_type>/<customer_id>', methods=['POST'])
-def order(drink_type, customer_id):
-    bar = requests.get('http://localhost:8081/bar/order/{}'.format(drink_type))
-    customer = requests.get('http://localhost:8082/customer/{}'.format(customer_id))
-    print('Order downloaded, server response: ', bar.status_code)
-
-    if bar.status_code == 200:
-        r = requests.patch(
-            'http://localhost:8082/customer/{}'.format(customer.json()["_id"]),
-            data = {
-                "firstname": str(customer.json()['firstname']),
-                "bill": customer.json()['bill'] + bar.json()['price'] 
-            },
-            headers={"If-Match": customer.json()["_etag"]}
-        )
-
-        print('Order confired, server status: ', r.status_code)
-    
-
-    return requests.get('http://localhost:8082/customer/{}'.format(customer_id)).json()
+def create_app():
 
 
-if __name__ == '__main__':
+    @app.route('/bar/order/<drink_type>', methods=['GET'])
+    def bar_order(drink_type):
+        r = requests.get('http://localhost:8081/bar/{}'.format(drink_type))
+        print('Drink located, server status: ', r.status_code)
 
+        if r.status_code == 200:
+            r = requests.patch(
+                'http://localhost:8081/bar/{}'.format(r.json()["_id"]), 
+                data = {
+                    "drink_type": str(r.json()['drink_type']),
+                    "quantity": r.json()['quantity'] - 1,
+                    "price": r.json()['price']
+                    },
+                headers={"If-Match": r.json()["_etag"]}
+                )
+            print('Quantity updated, server status: ', r.status_code)
+        
+        return requests.get('http://localhost:8081/bar/{}'.format(drink_type)).json()
 
     # enable logging to 'app.log' file
     handler = logging.FileHandler('app.log')
@@ -68,4 +62,4 @@ if __name__ == '__main__':
     # append the handler to the default application logger
     app.logger.addHandler(handler)
 
-    app.run(port=8082)
+    return app

@@ -1,0 +1,24 @@
+2020-10-21 12:51:41,953 INFO: {} [in run.py:14] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:DELETE
+2020-10-21 12:51:41,959 INFO: <Response 2 bytes [204 NO CONTENT]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:DELETE
+2020-10-21 12:51:41,961 INFO: inventory [in run.py:11] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:POST
+2020-10-21 12:51:41,968 INFO: <Response 1177 bytes [201 CREATED]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:POST
+2020-10-21 12:51:41,972 INFO: <Request 'http://localhost:8080/inventory' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:GET
+2020-10-21 12:51:41,972 INFO: <Response 1414 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:GET
+2020-10-21 12:52:21,152 INFO: inventory [in run.py:11] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory, method:POST
+2020-10-21 12:52:21,154 INFO: <Response 215 bytes [422 UNPROCESSABLE ENTITY]> [in run.py:18] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory, method:POST
+2020-10-21 12:52:56,536 INFO: inventory [in run.py:11] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory, method:POST
+2020-10-21 12:52:56,538 INFO: <Response 185 bytes [422 UNPROCESSABLE ENTITY]> [in run.py:18] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory, method:POST
+2020-10-21 12:53:38,175 INFO: inventory [in run.py:11] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory/, method:POST
+2020-10-21 12:53:38,177 INFO: <Response 185 bytes [422 UNPROCESSABLE ENTITY]> [in run.py:18] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory/, method:POST
+2020-10-21 12:53:52,297 INFO: inventory [in run.py:11] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory, method:POST
+2020-10-21 12:53:52,300 INFO: <Response 285 bytes [201 CREATED]> [in run.py:18] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/inventory, method:POST
+2020-10-21 12:58:43,137 INFO: {} [in run.py:14] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:DELETE
+2020-10-21 12:58:43,142 INFO: <Response 2 bytes [204 NO CONTENT]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:DELETE
+2020-10-21 12:58:43,144 INFO: inventory [in run.py:11] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:POST
+2020-10-21 12:58:43,152 INFO: <Response 1177 bytes [201 CREATED]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:POST
+2020-10-21 12:58:43,155 INFO: <Request 'http://localhost:8080/inventory' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:GET
+2020-10-21 12:58:43,155 INFO: <Response 1414 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:GET
+2020-10-21 12:59:15,812 INFO: <Request 'http://localhost:8080/inventory' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:GET
+2020-10-21 12:59:15,812 INFO: <Response 1414 bytes [200 OK]> [in run.py:18] -- ip: 127.0.0.1, url: http://localhost:8080/inventory, method:GET
+2020-10-21 13:00:03,691 INFO: <Request 'http://127.0.0.1:8080/customer' [GET]> [in run.py:8] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/customer, method:GET
+2020-10-21 13:00:03,691 INFO: <Response 178 bytes [404 NOT FOUND]> [in run.py:18] -- ip: 127.0.0.1, url: http://127.0.0.1:8080/customer, method:GET

@@ -1,0 +1,53 @@
+version: "3.7"
+
+services:
+
+    nginx:
+        build: ./nginx
+        container_name: nginx
+        restart: always
+        ports:
+            - 80:80
+
+    database:
+        image: mongo:latest    
+        container_name: database
+        ports: 
+            - 27017:27017
+    
+    inventory:
+        build: ./inventory
+        container_name: inventory
+        restart: always
+        environment:
+            - APP_NAME=InventoryMssc
+            - MONGO_URI=mongodb://database:27017/inventory
+        depends_on: [database, nginx]
+        expose:  
+            - 8080
+
+
+    bar:
+        build: ./bar
+        container_name: bar
+        restart: always
+        environment:
+            - APP_NAME=BarMssc
+            - MONGO_URI=mongodb://database:27017/bar
+        depends_on: [inventory, database, nginx]
+        expose: 
+            - 8081
+           
+
+
+    customer:
+        build: ./customer
+        container_name: customer
+        restart: always
+        environment:
+            - APP_NAME=CustomerMssc
+            -  MONGO_URI=mongodb://database:27017/customer
+        depends_on: [inventory, bar, database, nginx]
+        expose: 
+            - 8082
+
