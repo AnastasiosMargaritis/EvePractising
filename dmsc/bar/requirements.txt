@@ -2,3 +2,4 @@ flask
 gunicorn
 eve
 requests
+eve_swagger

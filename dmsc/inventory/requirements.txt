@@ -1,3 +1,4 @@
 flask 
 gunicorn
 eve
+eve_swagger

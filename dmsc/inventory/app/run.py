@@ -1,7 +1,25 @@
 from eve import Eve
+from eve_swagger import get_swagger_blueprint, add_documentation
+
 import logging
 
 app = Eve()
+
+swagger = get_swagger_blueprint()
+app.register_blueprint(swagger)
+
+# required. See http://swagger.io/specification/#infoObject for details.
+app.config['SWAGGER_INFO'] = {
+    'title': 'My Supercool API',
+    'version': '1.0',
+    'description': 'an API description',
+    'termsOfService': 'my terms of service',
+    'schemes': ['http', 'https'],
+}
+
+# optional. Will use flask.request.host if missing.
+app.config['SWAGGER_HOST'] = 'https://inventorydoc.com'    
+
 
 def log_every_get_request(resource, request, payload):
     app.logger.info(request)
@@ -12,14 +30,14 @@ def log_every_post(resource, request):
 def log_every_delete(resource, request, payload):
     app.logger.info(payload)
 
-@app.after_request
 def after(response):
     app.logger.info(response)
     return response
 
-app.on_post_GET += log_every_get_request
+app.on_pre_GET += log_every_get_request
 app.on_pre_POST += log_every_post
 app.on_pre_DELETE += log_every_delete
+app.on_fetched_resourse_inventory += after
 
 def create_app():
 

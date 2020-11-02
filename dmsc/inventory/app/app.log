@@ -1,0 +1,4 @@
+2020-11-02 14:32:09,031 INFO: <Request 'http://localhost:8000/inventory' [GET]> [in run.py:25] -- ip: 127.0.0.1, url: http://localhost:8000/inventory, method:GET
+2020-11-02 14:36:06,772 INFO: <Request 'http://localhost:8000/inventory' [GET]> [in run.py:25] -- ip: 127.0.0.1, url: http://localhost:8000/inventory, method:GET
+2020-11-02 14:36:53,444 INFO: <Request 'http://localhost:8000/inventory' [GET]> [in run.py:25] -- ip: 127.0.0.1, url: http://localhost:8000/inventory, method:GET
+2020-11-02 14:37:42,893 INFO: inventory [in run.py:28] -- ip: 127.0.0.1, url: http://localhost:8000/inventory, method:POST
