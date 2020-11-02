@@ -6,7 +6,7 @@ def main():
     get_inventory()
 
 def url_for(endpoint):
-    return "http://localhost:8080/{}".format(endpoint)
+    return "http://localhost/{}".format(endpoint)
 
 def post_inventory():
 

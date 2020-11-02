@@ -6,6 +6,10 @@ def create_app():
 
     @app.route('/bar/order/<drink_type>', methods=['GET'])
     def bar_order(drink_type):
+
+        """
+            Orders drinks from the bar. The drinks are loaded from the Inventory Microservice. 
+        """
         r = requests.get('http://localhost:8081/bar/{}'.format(drink_type))
         print('Drink located, server status: ', r.status_code)
 
